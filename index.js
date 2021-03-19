@@ -23,7 +23,7 @@ function destructivelyUpdateEmployeeWithKeyAndValue(employee, key, value){
 updateEmployeeWithKeyAndValue(employee, 'streetAddress', '12 Broadway')
 
 
-function deleteFromEmployeeByKey(employee, key){
+function deleteFromEmployeeByKey(employee,key){
     const newEmployee = {...employee};
     delete newEmployee.name;
     return newEmployee;
@@ -31,7 +31,7 @@ function deleteFromEmployeeByKey(employee, key){
 
 
 
-function destructivelyDeleteFromEmployeeByKey(employee, key){
+function destructivelyDeleteFromEmployeeByKey(employee,key){
     delete employee.name;
     return employee;
 }
